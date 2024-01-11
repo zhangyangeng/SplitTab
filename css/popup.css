@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.split-tab-popup {
+    width: 300px;
+    padding: 10px;
+}
+.split-tab-popup h1 {
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Split Tab",
+    "description": "Display the content of two or more tab pages in the same browser window",
+    "version": "1.0",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "32": "assets/logo.png"
+        },
+        "default_title": "Split Tab Plugin"
+    },
+    "content_scripts": [
+        {
+            "js": ["script/content.js"],
+            "matches": [
+                "https://*/*",
+                "http://*/*"
+            ]
+        }
+    ],
+    "background": {
+        "service_worker": "script/background.js"
+    },
+    "permissions": ["activeTab", "scripting"]
+}
